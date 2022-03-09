@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="colorChange">
+        <p>Color Change: </p>
+        <input type="color" id="colorChange" value="#00ffff">
+    </div>  
+    
+    <div class="calculatorContainer">
+        <p class="history"></p>
+        <div class="displayContainer">
+            <h2 id="display"></h2>
+        </div>
+        <div class="separador"></div>
+        <ul>
+            <li onclick="showInDisplay(this)" id="btnAC">AC</li>
+            <li onclick="showInDisplay(this)">C</li>
+            <li onclick="showInDisplay(this)">←</li>
+            <li onclick="showInDisplay(this)">/</li>
+        </ul>
+        <ul>
+            <li onclick="showInDisplay(this)">7</li>
+            <li onclick="showInDisplay(this)">8</li>
+            <li onclick="showInDisplay(this)">9</li>
+            <li onclick="showInDisplay(this)">x</li>
+        </ul>
+        <ul>
+            <li onclick="showInDisplay(this)">4</li>
+            <li onclick="showInDisplay(this)">5</li>
+            <li onclick="showInDisplay(this)">6</li>
+            <li onclick="showInDisplay(this)">-</li>
+        </ul>
+        <ul>
+            <li onclick="showInDisplay(this)">1</li>
+            <li onclick="showInDisplay(this)">2</li>
+            <li onclick="showInDisplay(this)">3</li>
+            <li onclick="showInDisplay(this)">+</li>
+        </ul>
+        <ul>
+            <li onclick="showInDisplay(this)">+/-</li>
+            <li onclick="showInDisplay(this)">0</li>
+            <li onclick="showInDisplay(this)">.</li>
+            <li onclick="showInDisplay(this)"id="equal">=</li>
+        </ul>
+    </div>
+
+    <div class="bg"></div>
+    
+    <script src="js/index.js"></script>
+    <script src="js/calculatorLogic.js"></script>
+</body>
+</html>

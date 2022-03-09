@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    list-style: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.colorChange {
+    position: absolute;
+    display: flex;
+    color: #717171;
+    top: 20px;
+    right: 20px;
+}
+
+.colorChange>p{
+    padding: 4px 10px;
+}
+
+#colorChange {
+    width: 28px;
+    border: none;
+    background: none;
+}
+
+.bg {
+    background-color: aqua;
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    bottom: 0px;
+    filter: brightness(80%);
+    z-index: -1;
+}
+
+.calculatorContainer {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#353537, #141B18);
+    padding: 46px 26px;
+    width: 406px;
+    height: 584px;
+    border-radius: 12px;
+}
+
+.calculatorContainer>p {
+    text-align: end;
+    font-size: 12pt;
+    opacity: 70%;
+    margin-right: 15px;
+}
+
+.history {
+    height: 400px;
+}
+
+.displayContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 400px;
+    padding: 18px 15px;
+}
+
+.display > h2 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.separador {
+    background-color: aqua;
+    align-self: flex-end;
+    height: 2px;
+    width: 50%;
+    margin: 0 15px 18px 0px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    text-align: center;
+}
+
+li {
+    font-size: 14pt;
+    height: 100%;
+    line-height: 73px;
+    user-select: none;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+#equal {
+    font-size: 21pt;
+    color: aqua;
+}
+
+#btnAC {
+    color: aqua;
+}
